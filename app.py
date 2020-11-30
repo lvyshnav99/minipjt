@@ -8,10 +8,10 @@ def home():
 
 @app.route('/after',methods=['GET','POST'])
 def after():
-    img=request.files['file1']
-    img.save('./static/file.jpg')
-    image=cv2.imread('./static/file.jpg')
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    #img=request.files['file1']
+    #img.save('./static/file.jpg')
+    #image=cv2.imread('./static/file.jpg')
+    #gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     return render_template('after.html')
     
  

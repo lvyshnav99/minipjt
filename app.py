@@ -9,7 +9,7 @@ def home():
 def after():
     img=request.files['file1']
     img.save('./static/file.jpg')
-    return "hii"
+    return render_template('after.html')
  
 if __name__ == "__main__":
     app.run()

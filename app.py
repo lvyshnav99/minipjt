@@ -5,9 +5,9 @@ app = Flask(__name__)
 def home():
   return render_template('base.html')
 
-@app.route('/after',methods=['GET','POST'])
+@app.route("/after",methods=['GET','POST'])
 def after():
-    return "<h2>hello world</h2>"
+    return "hii"
  
 if __name__ == "__main__":
     app.run()
